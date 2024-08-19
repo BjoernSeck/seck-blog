@@ -1,0 +1,38 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Seck'
+theme: 'hextra'
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - name: Knowledge Base
+      pageRef: /knowledge-base
+      weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+    - name: About
+      pageRef: /about
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/imfing/hextra"
+      params:
+        icon: github
+
+  sidebar:
+    - identifier: more
+      name: More
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "About"
+      pageRef: "/about"
+      weight: 2
+
